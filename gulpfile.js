@@ -67,6 +67,22 @@ function clean() {
 }
 exports.clean = clean;
 
+function csslibs() {
+  return src([
+    "node_modules/swiper/css/swiper.min.css"
+  ])
+    .pipe(dest("build/css"));
+}
+exports.csslibs = csslibs;
+
+function jslibs() {
+  return src([
+    "node_modules/swiper/js/swiper.min.js"
+  ])
+    .pipe(dest("build/js"));
+}
+exports.jslibs = jslibs;
+
 // Копирование файлов в папку build
 function copy() {
   return src([
@@ -107,12 +123,12 @@ exports.refresh = refresh;
 // Создание сборки проекта
 exports.build = series(
   clean,
-  parallel(copy, css, js, html)
+  parallel(copy, css, js, html, csslibs, jslibs)
 );
 
 // Создание сборки проекта и запуск сервера Browsersync
 exports.start = series(
   clean,
-  parallel(copy, css, js, html),
+  parallel(copy, css, js, html, csslibs, jslibs),
   server
 );

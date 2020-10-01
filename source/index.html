@@ -4,17 +4,201 @@
     <meta charset="utf-8">
     <title>Фирма OSTLtd</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css?v=1.00">
+    <link rel="stylesheet" href="css/swiper.min.css">
   </head>
   <body>
     <header class="header">
-
+      <div class="header__wrapper">
+        <a class="logo" href="#">
+          <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
+        </a>
+        <ul class="menu">
+          <li class="menu__item menu__item--active">ГЛАВНАЯ</li>
+          <li class="menu__item">КАТАЛОГ ПОДУКЦИИ</li>
+          <li class="menu__item">НАШИ УСЛУГИ</li>
+          <li class="menu__item">О КОМПАНИИ</li>
+          <li class="menu__item">КОНТАКТЫ</li>
+        </ul>
+        <div class="header__contacts">
+          <span>8-701-521-27-14</span>
+          <span>8-771-374-05-01</span>
+        </div>
+      </div>
     </header>
     <main class="container">
-      <section class="card">
+      <section class="offer">
+        <div class="offer__bgwrapper">
+          <div class="offer__wrapper">
+            <h1 class="offer__header">Европейские материалы
+              высокого качества
+            </h1>
+            <p class="offer__desc">Для рекламы и отделки интерьеров в Казахстане</p>
+            <div class="offer__buttons">
+              <button class="button" type="button">Оставить Заявку</button>
+              <a class="button button--light" href="#">смотреть каталог</a>
+            </div>
+          </div>
+          <div class="offer__slider">
+            <div class="offer__slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="offer__image">
+                    <!-- <source srcset="https://via.placeholder.com/570x403.webp" type="image/webp"> -->
+                    <img src="img/offer_slide_1.jpg" alt="Project Image" width="570" height="403">
+                  </picture>
+                  <div class="offer__image-desc">
+                    <span>Акриловое стекло</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="offer__image">
+                    <!-- <source srcset="https://via.placeholder.com/570x403.webp" type="image/webp"> -->
+                    <img src="https://via.placeholder.com/570x403.jpg" alt="Project Image" width="570" height="403">
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="offer__image">
+                    <!-- <source srcset="https://via.placeholder.com/570x403.webp" type="image/webp"> -->
+                    <img src="https://via.placeholder.com/570x403.jpg" alt="Project Image" width="570" height="403">
+                  </picture>
+                </div>
+              </div>
+              <button class="offer__slider-button offer__slider-button--prev" type="button">
+                <span class="visually-hidden">Slide to left</span>
+              </button>
+              <button class="offer__slider-button offer__slider-button--next" type="button">
+                <span class="visually-hidden">Slide to left</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="goods">
+        <h2>Что мы предлагаем</h2>
+        <div class="goods__cards">
+          <div class="good__card">
+            <h3>Листовые материалы</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+          <div class="good__card">
+            <h3>САМоклеящиеся и специальные плёнки</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+          <div class="good__card">
+            <h3>инструменты и светотехника</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+          <div class="good__card">
+            <h3>Материалы для печати</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+          <div class="good__card">
+            <h3>мобильные стенды</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+          <div class="good__card">
+            <h3>Профильные системы</h3>
+            <a class="button button--orange" href="#">Узнать подробнее</a>
+          </div>
+        </div>
+        <button class="button button--red" type="button">перейти в каталог</button>
+      </section>
+      <section class="services">
+        <h2>Какие услуги предоставляем</h2>
+        <div>
+          <span>ламинирование</span>
+        </div>
+        <div>
+          <span>широкоформатная печать</span>
+        </div>
+        <div>
+          <span>плоттерная резка</span>
+        </div>
+      </section>
+      <section class="advances">
+        <div>
+          <h3>большой ассортимент</h3>
+        </div>
+        <div>
+          <h3>Высокое качество товаров</h3>
+        </div>
+        <div>
+          <h3>Материалы всегда в наличиии</h3>
+        </div>
+      </section>
+      <section class="news">
+        <h2>Новости и акции компании</h2>
+        <div class="news__card">
+          <img src="img/news_1.png" alt="Новости компании" width="445" height="265">
+          <span>1 сентября, 2020</span>
+          <h3>Распродажа автомобильной плёнки</h3>
+          <p>Silent sir say desire fat him letter. Whatever settling goodness too and honoured she building answered her. Strongly thoughts remember mr to do consider debating. Spirits musical behaved on we he farther letters. Repulsive he he as deficient newspaper dashwoods we. Discovered her his pianoforte insipidity entreaties.</p>
+          <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+        </div>
+        <div class="news__card">
+          <img src="img/news_2.png" alt="Новости компании" width="445" height="265">
+          <span>2 сентября, 2020</span>
+          <h3>Представители SIBU</h3>
+          <p> ТОО "Фирма  ОСТ ltd" на протяжении 10 лет является официальным представителем австрийской компании SIBU design которая представляет на рынке свою продукцию в виде декоративных панелей для отделки интерьеров и фасадов мебели. Более подробная информация о видах декоративных панелей на официальном сайте www.sibu.at</p>
+          <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+        </div>
+      </section>
+      <section class="brands">
+        <h2>Наши брэнды</h2>
+        <div class="brands__slider">
+
+        </div>
+      </section>
+      <section class="partnership">
+        <h2>Будем рады сотрудничеству</h2>
+        <form action="" method="post">
+          <fieldset class="contact__fields" title="Form fields">
+            <span>Свяжитесь с нами</span>
+            <div class="contact__wrapper">
+              <label>Ваше имя
+                <input type="text" placeholder="Введите имя" name="name" required autocomplete="off">
+              </label>
+              <label>Ваш телефон
+                <input type="tel" placeholder="Введите номер телефона" name="phone" required autocomplete="off">
+              </label>
+              <label>Ваш email
+                <input type="email" name="email" placeholder="Введите электронный адрес" required autocomplete="off">
+              </label>
+              <label>Сообщение
+                <textarea name="message" placeholder="Введите сообщение" maxlength="500" required autocomplete="off"></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <button class="contact_button" type="submit" name="submit">
+            Отправить
+          </button>
+        </form>
+        <div class="partnership__desc">
+          <h2>Обязательно свяжемся с вами в ближайшее время</h2>
+          <p>* Ваши данные защищены от использования третьими лицами</p>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <a class="text-logo" href="#">
+        <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
+      </a>
+      <ul class="menu">
+        <li>ГЛАВНАЯ</li>
+        <li>КАТАЛОГ ПОДУКЦИИ</li>
+        <li>НАШИ УСЛУГИ</li>
+        <li>О КОМПАНИИ</li>
+        <li>КОНТАКТЫ</li>
+      </ul>
+      <div class="footer__contacts">
+        <span>8-701-521-27-14</span>
+        <span>8-771-374-05-01</span>
+      </div>
+      <span>© Copyright 2020 Все права защищены(с)</span>
+    </footer>
     <script src="js/script.min.js?v=1.00"></script>
+    <script src="js/swiper.min.js"></script>
   </body>
 </html>

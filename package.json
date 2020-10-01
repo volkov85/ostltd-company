@@ -42,5 +42,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "scss-resets": "^0.5.2"
+  },
+  "dependencies": {
+    "swiper": "^5.4.5"
   }
 }

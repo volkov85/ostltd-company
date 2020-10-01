@@ -15,3 +15,18 @@
 
 // Подключаем основные стили
 @import "misc/base";
+
+// Подключаем шапку
+@import "blocks/header";
+
+// Подключаем меню
+@import "blocks/menu";
+
+// Подключаем логотип
+@import "blocks/logo";
+
+// Подключаем блок Оффер
+@import "blocks/offer";
+
+// Подключаем блок button
+@import "blocks/button";
