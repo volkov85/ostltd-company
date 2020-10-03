@@ -69,7 +69,7 @@ exports.clean = clean;
 
 function csslibs() {
   return src([
-    "node_modules/swiper/css/swiper.min.css"
+    "node_modules/swiper/swiper-bundle.min.css"
   ])
     .pipe(dest("build/css"));
 }
@@ -77,7 +77,8 @@ exports.csslibs = csslibs;
 
 function jslibs() {
   return src([
-    "node_modules/swiper/js/swiper.min.js"
+    "node_modules/swiper/swiper-bundle.min.js",
+    "node_modules/swiper/swiper-bundle.min.js.map"
   ])
     .pipe(dest("build/js"));
 }

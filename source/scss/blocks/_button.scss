@@ -37,7 +37,22 @@
 
     &:hover {
       background: none;
-      background-color: #f2994a;
+    }
+  }
+
+  &--orange {
+    width: 188px;
+    background: #F2994A;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:active {
+      box-shadow: 0 3px 0 #bc783c, 0 3px 7px #bc783c;
     }
   }
 }
