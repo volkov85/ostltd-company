@@ -19,6 +19,7 @@
   margin: 0 auto;
   align-items: center;
   min-height: 508px;
+  justify-content: space-between;
 }
 
 .offer__header {
@@ -49,7 +50,7 @@
 .offer__slider {
   width: 570px;
   height: 403px;
-  margin: auto;
+  margin: 0;
 }
 
 .offer__image img {
