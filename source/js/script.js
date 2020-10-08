@@ -13,3 +13,15 @@ let offerSwiper = new Swiper(`.swiper-container`, {
     prevEl: `.offer__slider-button--prev`
   }
 });
+
+let newsSwiper = new Swiper(`.swiper-container-news`, {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  grabCursor: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
