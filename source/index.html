@@ -55,14 +55,20 @@
                 <div class="swiper-slide">
                   <picture class="offer__image">
                     <!-- <source srcset="https://via.placeholder.com/570x403.webp" type="image/webp"> -->
-                    <img src="https://via.placeholder.com/570x403.jpg" alt="Project Image" width="570" height="403">
+                    <img src="img/offer_slide_2.jpg" alt="Project Image" width="570" height="403">
                   </picture>
+                  <div class="offer__image-desc">
+                    <span>Самоклеящиеся пленки</span>
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <picture class="offer__image">
                     <!-- <source srcset="https://via.placeholder.com/570x403.webp" type="image/webp"> -->
-                    <img src="https://via.placeholder.com/570x403.jpg" alt="Project Image" width="570" height="403">
+                    <img src="img/offer_slide_3.jpg" alt="Project Image" width="570" height="403">
                   </picture>
+                  <div class="offer__image-desc">
+                    <span>Декоративные панели SIBU</span>
+                  </div>
                 </div>
               </div>
               <button class="offer__slider-button offer__slider-button--prev" type="button">
@@ -84,31 +90,31 @@
             </div>
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
-          <div class="goods__card">
+          <div class="goods__card goods__card--two">
             <div class="goods__card-wrapper">
               <h3>САМоклеящиеся и специальные плёнки</h3>
             </div>
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
-          <div class="goods__card">
+          <div class="goods__card goods__card--three">
             <div class="goods__card-wrapper">
               <h3>инструменты и светотехника</h3>
             </div>
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
-          <div class="goods__card">
+          <div class="goods__card goods__card--four">
             <div class="goods__card-wrapper">
               <h3>Материалы для печати</h3>
             </div>
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
-          <div class="goods__card">
+          <div class="goods__card goods__card--five">
             <div class="goods__card-wrapper">
               <h3>мобильные стенды</h3>
             </div>
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
-          <div class="goods__card">
+          <div class="goods__card goods__card--six">
             <div class="goods__card-wrapper">
               <h3>Профильные системы</h3>
             </div>
@@ -125,11 +131,11 @@
             <span>ламинирование</span>
           </div>
           <div class="services__card">
-            <img src="img/services_item_01.jpg" alt="Фото широкоформатная печать" width="300" height="300">
+            <img src="img/services_item_02.jpg" alt="Фото широкоформатная печать" width="300" height="300">
             <span>широкоформатная печать</span>
           </div>
           <div class="services__card">
-            <img src="img/services_item_01.jpg" alt="Фото плоттерная резка" width="300" height="300">
+            <img src="img/services_item_03.jpg" alt="Фото плоттерная резка" width="300" height="300">
             <span>плоттерная резка</span>
           </div>
         </div>
@@ -232,50 +238,54 @@
       </section>
       <section class="partnership">
         <h2>Будем рады сотрудничеству</h2>
-        <form action="" method="post">
-          <fieldset class="contact__fields" title="Form fields">
-            <span>Свяжитесь с нами</span>
-            <div class="contact__wrapper">
-              <label>Ваше имя
-                <input type="text" placeholder="Введите имя" name="name" required autocomplete="off">
-              </label>
-              <label>Ваш телефон
-                <input type="tel" placeholder="Введите номер телефона" name="phone" required autocomplete="off">
-              </label>
-              <label>Ваш email
-                <input type="email" name="email" placeholder="Введите электронный адрес" required autocomplete="off">
-              </label>
-              <label>Сообщение
-                <textarea name="message" placeholder="Введите сообщение" maxlength="500" required autocomplete="off"></textarea>
-              </label>
-            </div>
-          </fieldset>
-          <button class="contact_button" type="submit" name="submit">
-            Отправить
-          </button>
-        </form>
-        <div class="partnership__desc">
-          <h2>Обязательно свяжемся с вами в ближайшее время</h2>
-          <p>* Ваши данные защищены от использования третьими лицами</p>
+        <div class="partnership__wrapper">
+          <form class="partnership__form" action="" method="post">
+            <fieldset class="partnership__contact-fields" title="Form fields">
+              <span class="partnership__form-title">Свяжитесь с нами</span>
+              <div class="partnership__contact-wrapper">
+                <label>Ваше имя
+                  <input type="text" placeholder="Введите имя" name="name" required autocomplete="off">
+                </label>
+                <label>Ваш телефон
+                  <input type="tel" placeholder="Введите номер телефона" name="phone" required autocomplete="off">
+                </label>
+                <label>Ваш email
+                  <input type="email" name="email" placeholder="Введите электронный адрес" required autocomplete="off">
+                </label>
+                <label>Сообщение
+                  <textarea name="message" placeholder="Введите сообщение" maxlength="500" rows="6" required autocomplete="off"></textarea>
+                </label>
+              </div>
+            </fieldset>
+            <button class="partnership__contact-button button" type="submit" name="submit">
+              Отправить
+            </button>
+          </form>
+          <div class="partnership__desc">
+            <p class="partnership__desc-title">Обязательно свяжемся с вами в ближайшее время</p>
+            <p class="partnership__desc-note">* Ваши данные защищены от использования третьими лицами</p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="text-logo" href="#">
-        <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
-      </a>
-      <ul class="menu">
-        <li>ГЛАВНАЯ</li>
-        <li>КАТАЛОГ ПОДУКЦИИ</li>
-        <li>НАШИ УСЛУГИ</li>
-        <li>О КОМПАНИИ</li>
-        <li>КОНТАКТЫ</li>
-      </ul>
-      <div class="footer__contacts">
-        <span>8-701-521-27-14</span>
-        <span>8-771-374-05-01</span>
+      <div class="footer__wrapper">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
+        </a>
+        <ul class="menu">
+          <li class="menu__item menu__item--active">ГЛАВНАЯ</li>
+          <li class="menu__item">КАТАЛОГ ПОДУКЦИИ</li>
+          <li class="menu__item">НАШИ УСЛУГИ</li>
+          <li class="menu__item">О КОМПАНИИ</li>
+          <li class="menu__item">КОНТАКТЫ</li>
+        </ul>
+        <div class="footer__contacts">
+          <span>8-701-521-27-14</span>
+          <span>8-771-374-05-01</span>
+        </div>
       </div>
-      <span>© Copyright 2020 Все права защищены(с)</span>
+      <p class="footer__copyright">© Copyright 2020 Все права защищены(с)</p>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.min.js?v=1.00"></script>

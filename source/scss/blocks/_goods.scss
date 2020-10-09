@@ -57,6 +57,36 @@
     background: url("../img/card_image_01.jpg") center no-repeat;
   }
 
+  &--two {
+    &::before {
+      background: url("../img/card_image_02.jpg") center no-repeat;
+    }
+  }
+
+  &--three {
+    &::before {
+      background: url("../img/card_image_03.jpg") center no-repeat;
+    }
+  }
+
+  &--four {
+    &::before {
+      background: url("../img/card_image_04.jpg") center no-repeat;
+    }
+  }
+
+  &--five {
+    &::before {
+      background: url("../img/card_image_05.jpg") center no-repeat;
+    }
+  }
+
+  &--six {
+    &::before {
+      background: url("../img/card_image_06.jpg") center no-repeat;
+    }
+  }
+
   h3 {
     font-weight: $fontMedium;
     font-size: 14px;
