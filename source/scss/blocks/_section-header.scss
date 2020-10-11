@@ -1,0 +1,22 @@
+.section-header {
+  margin: 50px 0;
+  position: relative;
+  font-weight: $fontBold;
+  font-size: 30px;
+
+  &--contacts {
+    text-transform: uppercase;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 126px;
+    height: 3px;
+    top: 50px;
+    background: #f2994a;
+    border-radius: 2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

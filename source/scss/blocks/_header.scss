@@ -16,6 +16,13 @@
     z-index: -1;
   }
 
+  &--inner {
+    &::before {
+      height: 100px;
+      background: url("../img/top_menu_back.jpg") no-repeat top center;
+    }
+  }
+
   &::after {
     content: "";
     position: absolute;

@@ -1,0 +1,15 @@
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: url("../img/bg-map.jpg") no-repeat center center / cover;
+  height: 370px;
+}
+
+.map iframe {
+  border: none;
+  width: 100%;
+  z-index: 2;
+}
