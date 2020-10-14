@@ -49,14 +49,6 @@ exports.html = html;
 function js() {
   return src(`source/js/*.js`)
     .pipe(sourcemaps.init())
-    .pipe(babel({
-      presets: [`@babel/env`]
-    }))
-    .pipe(uglify())
-    .pipe(rename({
-      suffix: `.min`
-    }))
-    .pipe(sourcemaps.write(`.`))
     .pipe(dest(`build/js`));
 }
 exports.js = js;

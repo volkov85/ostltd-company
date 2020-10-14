@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="top">
       <div class="header__wrapper">
         <a class="logo" href="index.html">
           <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
@@ -128,7 +128,7 @@
             <a class="button button--orange" href="#!">Узнать подробнее</a>
           </div>
         </div>
-        <button class="button button--red" type="button">перейти в каталог</button>
+        <a class="button button--red" href="catalog.html">перейти в каталог</a>
       </section>
       <section class="services">
         <h2 class="section-header">Какие услуги предоставляем</h2>
@@ -146,7 +146,7 @@
             <span>плоттерная резка</span>
           </div>
         </div>
-        <button class="button button--red" type="button">Подробнее об услугах</button>
+        <a class="button button--red" href="services.html">Подробнее об услугах</a>
       </section>
       <section class="advances">
         <h2 class="section-header">Почему клиенты нас выбирают</h2>
@@ -304,7 +304,11 @@
       </div>
       <p class="footer__copyright">© Copyright 2020 Все права защищены(с)</p>
     </footer>
+    <a class="top-link" href="#top">
+      <span class="visually-hidden">Scroll to Top</span>
+    </a>
+    <script src="js/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.min.js?v=1.00"></script>
+    <script src="js/script.js?v=1.00"></script>
   </body>
 </html>
