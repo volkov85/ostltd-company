@@ -29,7 +29,26 @@ let newsSwiper = new Swiper(`.swiper-container-news`, {
 });
 
 // Smooth scrolling script
-$(`a`).on(`click`, function (evt) {
+$(`.top-link`).on(`click`, function (evt) {
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== ``) {
+    evt.preventDefault();
+
+    let hash = this.hash;
+
+    $(`html, body`).animate({
+      scrollTop: $(hash).offset().top
+    }, 800, () => {
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      if (hash !== `#top`) {
+        window.location.hash = hash;
+      }
+    });
+  }
+});
+
+// Smooth scrolling script
+$(`.button-link`).on(`click`, function (evt) {
   // Make sure this.hash has a value before overriding default behavior
   if (this.hash !== ``) {
     evt.preventDefault();

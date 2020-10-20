@@ -42,18 +42,28 @@
 
   &--orange {
     width: 188px;
-    background: #F2994A;
+    background: #f2994a;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border: none;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
 
     &:active {
       box-shadow: 0 3px 0 #bc783c, 0 3px 7px #bc783c;
     }
+  }
+
+  &--orange-cat {
+    min-width: 188px;
+    min-height: 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px;
   }
 
   &--red {
