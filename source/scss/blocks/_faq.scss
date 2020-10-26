@@ -1,0 +1,193 @@
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.faq__title-wrapper {
+  margin-bottom: 50px;
+}
+
+.faq__columns {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.faq__content {
+  width: 900px;
+}
+
+.faq__title {
+  margin-bottom: 23px;
+}
+
+.faq__list {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 110px;
+  margin-bottom: 20px;
+  padding: 14px 70px 14px 250px;
+  background-color: $ColorPrimary;
+  box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 14px;
+    height: 14px;
+    border: 0 solid  #f2994a;
+    border-width: 0 3px 3px 0;
+    transform: translateY(calc(-50% - 5px)) rotate(45deg);
+    transition: 0.4s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 110px;
+    border-radius: 3px 0 0 3px;
+    background: url("../img/cat-sibu-01.jpg") no-repeat;
+  }
+
+  &:hover,
+  &--active {
+    color: $ColorLightGrey;
+    background-color: #f2994a;
+
+    &::before {
+      border-color: $ColorLightGrey;
+    }
+  }
+
+  &--active {
+    &::before {
+      transform: translateY(calc(-50% + 5px)) rotate(45deg) scale(-1);
+    }
+  }
+
+  &--no-image {
+    padding: 14px 70px 14px 50px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--02 {
+    &::after {
+      background: url("../img/cat-sibu-02.jpg") no-repeat;
+    }
+  }
+
+  &--03 {
+    &::after {
+      background: url("../img/cat-sibu-03.jpg") no-repeat;
+    }
+  }
+
+  &--04 {
+    &::after {
+      background: url("../img/cat-sibu-04.jpg") no-repeat;
+    }
+  }
+
+  &--05 {
+    &::after {
+      background: url("../img/cat-sibu-05.jpg") no-repeat;
+    }
+  }
+
+  &--06 {
+    &::after {
+      background: url("../img/cat-sibu-06.jpg") no-repeat;
+    }
+  }
+
+  &--07 {
+    &::after {
+      background: url("../img/cat-sibu-07.jpg") no-repeat;
+    }
+  }
+
+  &--08 {
+    &::after {
+      background: url("../img/cat-sibu-08.jpg") no-repeat;
+    }
+  }
+
+  &--09 {
+    &::after {
+      background: url("../img/cat-sibu-09.jpg") no-repeat;
+    }
+  }
+
+  &--10 {
+    &::after {
+      background: url("../img/cat-sibu-10.jpg") no-repeat;
+    }
+  }
+
+  &--11 {
+    &::after {
+      background: url("../img/cat-sibu-11.jpg") no-repeat;
+    }
+  }
+}
+
+.faq__answer {
+  display: none;
+
+  .faq__question--active + & {
+    margin-bottom: 30px;
+  }
+
+  &--active {
+    display: block;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.4s;
+  }
+}
+
+.faq__answer-wrapper {
+  padding: 25px;
+  box-sizing: border-box;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

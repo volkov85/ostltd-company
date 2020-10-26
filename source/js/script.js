@@ -74,3 +74,24 @@ $(window).scroll(function () {
     $(`.top-link`).fadeOut(800);
   }
 });
+
+// Add FAQ accordeon
+const faqQuestions = document.querySelectorAll(`.faq__question`);
+const faqAnswers = document.querySelectorAll(`.faq__answer`);
+
+if (faqQuestions.length) {
+  for (let i = 0; i < faqQuestions.length; i++) {
+    faqQuestions[i].addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+
+      if (faqQuestions[i].classList.contains(`faq__question--active`)) {
+        faqQuestions[i].classList.remove(`faq__question--active`);
+        faqAnswers[i].classList.remove(`faq__answer--active`);
+        // removeAnimationClassShown(faqAnswers[i], `faq__answer--active`);
+      } else {
+        faqQuestions[i].classList.add(`faq__question--active`);
+        faqAnswers[i].classList.add(`faq__answer--active`);
+      }
+    });
+  }
+}
