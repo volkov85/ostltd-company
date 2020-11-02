@@ -191,3 +191,59 @@
     margin-bottom: 0;
   }
 }
+
+.faq__answer .faq__answer-title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.faq__answer-desc-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__answer-desc {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+
+.faq__answer-table {
+  width: 519px;
+  text-align: center;
+  border-spacing: 2px;
+
+  th {
+    border: solid 2px #f2994a;
+    background-color: #f2994a;
+    height: 50px;
+  }
+
+  td {
+    border: solid 2px #f2994a;
+    background-color: #f2994a;
+    height: 50px;
+  }
+}
+
+.faq__answer-table-wrapper {
+  width: 519px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faq__answer-bg-wrapper {
+  padding: 15px;
+  border-bottom: solid 2px #f2994a;
+
+  &:first-child {
+    border-top: solid 2px #f2994a;
+  }
+}
