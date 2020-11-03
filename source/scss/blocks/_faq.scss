@@ -212,6 +212,10 @@
   line-height: 17px;
   text-align: center;
   color: #000000;
+
+  &--glue {
+    text-align: left;
+  }
 }
 
 .faq__answer-table {
@@ -230,6 +234,10 @@
     background-color: #f2994a;
     height: 50px;
   }
+
+  &--glue {
+    width: 100%;
+  }
 }
 
 .faq__answer-table-wrapper {
@@ -237,6 +245,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &--glue {
+    justify-content: center;
+  }
 }
 
 .faq__answer-bg-wrapper {
