@@ -222,6 +222,84 @@
       background: url("../img/item-pnc-04.jpg") no-repeat;
     }
   }
+
+  &--5-01 {
+    &::after {
+      background: url("../img/item-smp-05-01.jpg") no-repeat;
+    }
+  }
+
+  &--5-02 {
+    &::after {
+      background: url("../img/item-smp-05-02.jpg") no-repeat;
+    }
+  }
+
+  &--6-01 {
+    &::after {
+      background: url("../img/item-smp-06-01.jpg") no-repeat;
+    }
+  }
+
+  &--6-02 {
+    &::after {
+      background: url("../img/item-smp-06-02.jpg") no-repeat;
+    }
+  }
+
+  &--7-01 {
+    &::after {
+      background: url("../img/item-smp-07-01.jpg") no-repeat;
+    }
+  }
+
+  &--8-01 {
+    &::after {
+      background: url("../img/item-smp-08-01.jpg") no-repeat;
+    }
+  }
+
+  &--9-01 {
+    &::after {
+      background: url("../img/item-smp-09-01.jpg") no-repeat;
+    }
+  }
+
+  &--9-02 {
+    &::after {
+      background: url("../img/item-smp-09-02.jpg") no-repeat;
+    }
+  }
+
+  &--10-01 {
+    &::after {
+      background: url("../img/item-smp-10-01.jpg") no-repeat;
+    }
+  }
+
+  &--10-02 {
+    &::after {
+      background: url("../img/item-smp-10-02.jpg") no-repeat;
+    }
+  }
+
+  &--11-01 {
+    &::after {
+      background: url("../img/item-smp-11-01.jpg") no-repeat;
+    }
+  }
+
+  &--11-02 {
+    &::after {
+      background: url("../img/item-smp-11-02.jpg") no-repeat;
+    }
+  }
+
+  &--11-03 {
+    &::after {
+      background: url("../img/item-smp-11-03.jpg") no-repeat;
+    }
+  }
 }
 
 .faq__answer {
@@ -270,6 +348,7 @@
 .faq__answer-desc-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .faq__answer-desc {
@@ -311,6 +390,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   &--glue {
     justify-content: center;
