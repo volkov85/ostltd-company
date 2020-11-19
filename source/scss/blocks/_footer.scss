@@ -13,6 +13,13 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
 }
 
 .footer__contacts {
@@ -64,4 +71,11 @@
   line-height: 12px;
   color: #ffffff;
   align-self: flex-start;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
 }

@@ -1,3 +1,15 @@
 .logo {
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 77px;
+    height: 43px;
+  }
+
+  img {
+    @media (max-width: 768px) {
+      width: 77px;
+      height: 43px;
+    }
+  }
 }

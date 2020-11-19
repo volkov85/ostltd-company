@@ -20,6 +20,13 @@
   align-items: center;
   min-height: 508px;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
 }
 
 .offer__header {
@@ -51,6 +58,10 @@
   width: 570px;
   height: 403px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .offer__image img {

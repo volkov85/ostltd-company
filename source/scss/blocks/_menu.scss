@@ -6,6 +6,10 @@
   align-items: center;
   color: #ffffff;
   width: 670px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__item {
@@ -47,5 +51,8 @@
       box-shadow: 0 3px 0 #bc783c, 0 3px 7px #bc783c;
     }
   }
+}
 
+.menu-mobile {
+  display: none;
 }

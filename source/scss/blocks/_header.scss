@@ -40,6 +40,12 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .header__contacts {
@@ -47,6 +53,10 @@
   flex-direction: column;
   align-items: center;
   margin: auto 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header__contacts span {
@@ -80,5 +90,57 @@
     height: 15px;
     background: url("../img/icon_whatsapp.svg") no-repeat center;
     z-index: 2;
+  }
+}
+
+.header__menu-toggle {
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  color: inherit;
+  background: content-box $ColorPrimary;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: $ColorPrimary;
+    transition: transform 0.3s;
+  }
+
+  &::before {
+    top: 4px;
+  }
+
+  &::after {
+    bottom: 4px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    &::before,
+    &::after {
+      transform: scaleX(0.9);
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      transform: scaleX(0.8);
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

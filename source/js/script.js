@@ -26,6 +26,7 @@ let newsSwiper = new Swiper(`.swiper-container-news`, {
     el: '.swiper-pagination',
     clickable: true,
   },
+
 });
 
 // Smooth scrolling script
