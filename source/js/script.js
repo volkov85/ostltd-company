@@ -17,16 +17,21 @@ let offerSwiper = new Swiper(`.swiper-container`, {
 });
 
 let newsSwiper = new Swiper(`.swiper-container-news`, {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 30,
-  freeMode: true,
+  slidesPerView: 1,
   grabCursor: true,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  // freeMode: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  }
 });
 
 // Smooth scrolling script
@@ -105,3 +110,16 @@ if (faqQuestions.length) {
     });
   }
 }
+
+// Menu toggler
+let menuOpener = document.querySelector('.header__menu-toggle');
+let menuCloser = document.querySelector('.header__toggle--close');
+let menuMobile = document.querySelector('.menu-mobile');
+
+menuOpener.addEventListener('click', function () {
+  menuMobile.classList.remove('menu-mobile--closed');
+});
+
+menuCloser.addEventListener('click', function () {
+  menuMobile.classList.add('menu-mobile--closed');
+});

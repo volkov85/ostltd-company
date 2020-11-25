@@ -4,7 +4,11 @@
   margin: 0 auto;
   align-items: center;
   min-height: 658px;
-  background: url("../img/services_back.jpg") center top no-repeat;
+  background: url("../img/services_back.jpg") center top repeat;
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+  }
 }
 
 .services__wrapper {
@@ -20,6 +24,7 @@
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
+    justify-content: space-around;
   }
 
   .button {

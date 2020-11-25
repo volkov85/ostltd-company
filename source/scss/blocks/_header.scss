@@ -45,6 +45,7 @@
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
+    align-items: center;
   }
 }
 
@@ -99,10 +100,14 @@
   box-sizing: border-box;
   width: 24px;
   height: 24px;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 11px;
   padding-bottom: 11px;
   color: inherit;
   background: content-box $ColorPrimary;
+  border: none;
+  outline: none;
 
   &::before,
   &::after {
@@ -112,7 +117,6 @@
     left: 0;
     height: 2px;
     background-color: $ColorPrimary;
-    transition: transform 0.3s;
   }
 
   &::before {
@@ -123,24 +127,104 @@
     bottom: 4px;
   }
 
-  &:hover,
-  &:focus {
-    outline: none;
-
-    &::before,
-    &::after {
-      transform: scaleX(0.9);
-    }
-  }
-
-  &:active {
-    &::before,
-    &::after {
-      transform: scaleX(0.8);
-    }
-  }
-
   @media (max-width: 768px) {
     display: block;
+  }
+}
+
+.header__contacts-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+}
+
+.header__contacts-mobile span {
+  font-weight: $fontSemi-bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  position: relative;
+
+  &:first-child {
+    margin-bottom: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/icon_phone.svg") no-repeat center;
+      z-index: 2;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/icon_whatsapp.svg") no-repeat center;
+    z-index: 2;
+  }
+}
+
+.header__toggle {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 33px;
+  height: 18px;
+  color: white;
+  outline: none;
+  background: none;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 27px;
+    height: 2px;
+    background-color: currentColor;
+    box-shadow: 0 7px currentColor;
+    transition: 0.4s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    width: 18px;
+    height: 2px;
+    background-color: currentColor;
+    transition: 0.4s;
+  }
+
+  &--close {
+    height: 26px;
+
+    &::before {
+      top: 10px;
+      right: 3px;
+      box-shadow: none;
+      opacity: 1;
+      transform: rotate(225deg);
+    }
+
+    &::after {
+      right: 3px;
+      bottom: 14px;
+      width: 27px;
+      box-shadow: none;
+      opacity: 1;
+      transform: rotate(-225deg);
+    }
   }
 }

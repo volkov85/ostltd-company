@@ -18,6 +18,11 @@
   line-height: 22px;
   text-transform: uppercase;
 
+  @media (max-width: 768px) {
+    width: 270px;
+    align-items: center;
+  }
+
   &:hover {
     outline: none;
     box-shadow: 0 8px 16px rgba(#b31f27, 0.25);

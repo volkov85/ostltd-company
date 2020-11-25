@@ -36,6 +36,14 @@
   color: #ffffff;
   max-width: 520px;
   margin: 0 0 24px 0;
+
+  @media (max-width: 768px) {
+    width: 270px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 .offer__desc {
@@ -45,6 +53,16 @@
   color: #ffffff;
   max-width: 340px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    width: 270px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
 
 .offer__buttons {
@@ -52,6 +70,19 @@
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    width: 270px;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.offer__buttons a:first-child {
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .offer__slider {
@@ -123,5 +154,11 @@
 
   @media (max-width: 320px) {
     display: none;
+  }
+}
+
+.offer__wrapper {
+  @media (max-width: 768px) {
+    margin: auto;
   }
 }

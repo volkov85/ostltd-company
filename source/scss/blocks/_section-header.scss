@@ -19,4 +19,25 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  &--big {
+    width: 280px;
+    text-align: center;
+
+    &::after {
+      top: 70px;
+    }
+
+    @media (max-width: 768px) {
+      &::after {
+        top: 70px;
+      }
+    }
+  }
 }
