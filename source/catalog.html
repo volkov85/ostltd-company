@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
-    <header class="header header--inner">
+    <header class="header header--inner" id="top">
       <div class="header__wrapper">
         <a class="logo" href="index.html">
           <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
@@ -73,7 +73,7 @@
       <section class="catalog">
         <h2 class="section-header section-header--contacts">КАТАЛОГ ПРОДУКЦИИ</h2>
         <div class="catalog__wrapper">
-          <div class="catalog__menu">
+          <div class="catalog__menu catalog__menu--hide">
             <div class="catalog__menu-title">
               <span>Меню</span>
             </div>
@@ -306,6 +306,9 @@
       </div>
       <p class="footer__copyright">© Copyright 2020 Все права защищены(с)</p>
     </footer>
+    <a class="top-link" href="#top">
+      <span class="visually-hidden">Scroll to Top</span>
+    </a>
     <script src="js/jquery.min.js"></script>
     <script>
       $(function() {

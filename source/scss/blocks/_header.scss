@@ -33,6 +33,15 @@
     background-color: #d8643a;
     z-index: -2;
   }
+
+  .logo {
+    img {
+      @media (max-width: 768px) {
+        width: 77px;
+        height: 43px;
+      }
+    }
+  }
 }
 
 .header__wrapper {
