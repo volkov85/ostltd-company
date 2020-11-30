@@ -42,6 +42,12 @@
       }
     }
   }
+
+  @media (max-width: 768px) {
+    &::before {
+      background: url("../img/offer_back_m.jpg") no-repeat center;
+    }
+  }
 }
 
 .header__wrapper {

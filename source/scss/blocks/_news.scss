@@ -3,8 +3,12 @@
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  min-height: 745px;
-  background: url("../img/news_back.jpg") center top repeat;
+  min-height: 753px;
+  background: url("../img/news_back.jpg") center top no-repeat;
+
+  @media (max-width: 768px) {
+    background-repeat: repeat;
+  }
 }
 
 .news__wrapper {

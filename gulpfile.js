@@ -10,6 +10,9 @@ const htmlmin = require(`gulp-htmlmin`);
 const babel = require(`gulp-babel`);
 const uglify = require(`gulp-uglify`);
 const del = require(`del`);
+const imagemin = require(`gulp-imagemin`);
+const imageminPngquant = require(`imagemin-pngquant`);
+const imageminMozjpeg = require(`imagemin-mozjpeg`);
 const browserSync = require(`browser-sync`).create();
 
 // Компиляция файлов *.css из *.scss с автопрефиксером и минификацией
@@ -52,6 +55,24 @@ function js() {
     .pipe(dest(`build/js`));
 }
 exports.js = js;
+
+// Минификация картинок
+function imgMin() {
+  return src(`source/img/*.{png,jpg,svg}`)
+    .pipe(imagemin([
+      imageminPngquant({
+        speed: 1,
+        strip: true,
+        quality: [0.7, 0.9]
+      }),
+      imageminMozjpeg({
+        quality: 75
+      }),
+      imagemin.svgo()
+    ]))
+    .pipe(dest(`build/img`));
+}
+exports.imgMin = imgMin;
 
 // Удаление файлов в папке build перед копированием
 function clean() {

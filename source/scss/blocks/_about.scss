@@ -19,10 +19,28 @@
   border-radius: 3px;
   padding: 40px;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  img {
+    @media (max-width: 768px) {
+      margin: auto;
+    }
+  }
 }
 
 .about__wrapper-text {
   max-width: 670px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .about__text {
