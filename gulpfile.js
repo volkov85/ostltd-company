@@ -103,7 +103,9 @@ function copy() {
     `source/fonts/**/*.{woff,woff2}`,
     `source/img/**`,
     `source/img/icon-*.svg`,
-    `source/*.ico`
+    `source/*.ico`,
+    `source/phpmailer/**`,
+    `source/*.php`
   ], {
     base: `source`
   })

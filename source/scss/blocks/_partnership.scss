@@ -25,7 +25,7 @@
 
 .partnership__form {
   width: 384px;
-  height: 590px;
+  height: auto;
   background: #ffffff;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
@@ -164,6 +164,7 @@
     font-size: 18px;
     line-height: 21px;
     margin: 10px auto;
+    display: none;
   }
 }
 
@@ -177,6 +178,6 @@
 
   @media (max-width: 768px) {
     width: 270px;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }

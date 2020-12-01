@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body>
+    <?php include 'mail.php'; ?>
     <header class="header" id="top">
       <div class="header__wrapper">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
           <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
         </a>
         <ul class="menu">
           <li>
-            <a class="menu__item menu__item--active" href="index.html">ГЛАВНАЯ</a>
+            <a class="menu__item menu__item--active" href="index.php">ГЛАВНАЯ</a>
           </li>
           <li>
             <a  class="menu__item" href="catalog.html">КАТАЛОГ ПОДУКЦИИ</a>
@@ -28,7 +29,7 @@
             <a class="menu__item" href="about.html">О КОМПАНИИ</a>
           </li>
           <li>
-            <a class="menu__item" href="contacts.html">КОНТАКТЫ</a>
+            <a class="menu__item" href="contacts.php">КОНТАКТЫ</a>
           </li>
         </ul>
         <button class="header__menu-toggle" type="button">
@@ -51,7 +52,7 @@
         </div>
         <ul class="menu-mobile__inner">
           <li>
-            <a class="menu__item__inner" href="index.html">ГЛАВНАЯ</a>
+            <a class="menu__item__inner" href="index.php">ГЛАВНАЯ</a>
           </li>
           <li>
             <a  class="menu__item__inner" href="catalog.html">КАТАЛОГ ПОДУКЦИИ</a>
@@ -63,7 +64,7 @@
             <a class="menu__item__inner" href="about.html">О КОМПАНИИ</a>
           </li>
           <li>
-            <a class="menu__item__inner" href="contacts.html">КОНТАКТЫ</a>
+            <a class="menu__item__inner" href="contacts.php">КОНТАКТЫ</a>
           </li>
         </ul>
       </div>
@@ -295,7 +296,10 @@
                 </label>
               </div>
             </fieldset>
-            <button class="partnership__contact-button button" type="submit" name="submit">
+            <div class="captcha" style="display: flex;justify-content: center;margin-top: 20px;">
+              <div class="g-recaptcha" data-sitekey="6LcXmvQZAAAAAA3muSf-ejX3G53aYsEQxZtJyCDu"></div>
+            </div>
+            <button class="partnership__contact-button button" type="submit" name="submit" id="sendButton">
               Отправить
             </button>
           </form>
@@ -307,13 +311,16 @@
       </section>
     </main>
     <footer class="footer">
+          <!--alert messages start-->
+          <?php echo $alert; ?>
+          <!--alert messages end-->
       <div class="footer__wrapper">
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
           <img src="img/logo.png" alt="Логотип ОСТЛТД" width="160" height="89">
         </a>
         <ul class="menu">
           <li>
-            <a class="menu__item menu__item--active" href="#!">ГЛАВНАЯ</a>
+            <a class="menu__item menu__item--active" href="index.php">ГЛАВНАЯ</a>
           </li>
           <li>
             <a  class="menu__item" href="catalog.html">КАТАЛОГ ПОДУКЦИИ</a>
@@ -325,7 +332,7 @@
             <a class="menu__item" href="about.html">О КОМПАНИИ</a>
           </li>
           <li>
-            <a class="menu__item" href="contacts.html">КОНТАКТЫ</a>
+            <a class="menu__item" href="contacts.php">КОНТАКТЫ</a>
           </li>
         </ul>
         <div class="footer__contacts">
@@ -338,8 +345,12 @@
     <a class="top-link" href="#top">
       <span class="visually-hidden">Scroll to Top</span>
     </a>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js?v=1.00"></script>
+    <script type='text/javascript'>
+      RecoverScroll.start();
+    </script>
   </body>
 </html>
