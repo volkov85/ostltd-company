@@ -4,10 +4,12 @@
   margin: 0 auto;
   align-items: center;
   min-height: 753px;
+  max-height: 753px;
   background: url("../img/news_back.jpg") center top no-repeat;
 
   @media (max-width: 768px) {
     background-repeat: repeat;
+    max-height: none;
   }
 }
 
